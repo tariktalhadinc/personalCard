@@ -11,7 +11,6 @@ section{
 }
 
 .profile{
-    /*height: 100vh;*/
     width: 100%;
     background-color: #081420;
     display: flex;
@@ -69,38 +68,14 @@ section{
     justify-content: center;
     margin: 0 30px;
 }
-/* .newslatter form{
-    width: 100%;
-    max-width: 370px;
-    position: relative;
-} */
+
 .newslatter p{
     width: 100%;
     max-width: 370px;
     position: relative;
     color: aliceblue;
 }
-/* .newslatter form input:first-child{
-    display: inline-block;
-    width: 100%;
-    outline: none;
-    border: 2px solid #ffffffd9;
-    padding: 11px 90px 11px 9px;
-    border-radius: 20px;
-}
-.newslatter form input:last-child{
-    position: absolute;
-    display: inline-block;
-    outline: none;
-    border: none;
-    background-color: #2ecc71;
-    color: #ffffffd9;
-    padding: 9px 29px;
-    border-radius: 20px;
-    cursor: pointer;
-    top: 4px;
-    right: 4px;
-} */
+
 @media (max-width: 800px){
     section{
         padding: 20px 4%;
@@ -116,5 +91,181 @@ section{
         object-fit: cover;
     }
 }
+
+.container__progressbars {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 240px;
+    width: 100%;
+    min-height: 100%;
+}
+
+.progressbar {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    margin: 1em;
+    transform: rotate(-90deg);
+}
+
+.progressbar__svg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.progressbar__svg-circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke: white;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+.shadow-html {
+    filter: drop-shadow(0 0 5px #ff6633);
+}
+
+.shadow-css {
+    filter: drop-shadow(0 0 5px #33bbff);
+}
+
+.shadow-csharp {
+    filter: drop-shadow(0 0 5px #ff33ff);
+}
+
+.shadow-js {
+    filter: drop-shadow(0 0 5px #ffff33);
+}
+
+.shadow-mvc {
+    filter: drop-shadow(0 0 5px #2ecc72);
+}
+
+.shadow-aspnet {
+    filter: drop-shadow(0 0 5px #0026ff);
+}
+
+.circle-html {
+    -webkit-animation: anim_circle-html 1s ease-in-out forwards;
+    animation: anim_circle-html 1s ease-in-out forwards;
+}
+
+.circle-css {
+    -webkit-animation: anim_circle-css 1s ease-in-out forwards;
+    animation: anim_circle-css 1s ease-in-out forwards;
+}
+
+.circle-csharp {
+    -webkit-animation: anim_circle-csharp 1s ease-in-out forwards;
+    animation: anim_circle-csharp 1s ease-in-out forwards;
+}
+
+.circle-js {
+    -webkit-animation: anim_circle-js 1s ease-in-out forwards;
+    animation: anim_circle-js 1s ease-in-out forwards;
+}
+
+.circle-mvc {
+    -webkit-animation: anim_circle-mvc 1s ease-in-out forwards;
+    animation: anim_circle-mvc 1s ease-in-out forwards;
+}
+
+ .circle-aspnet {
+    -webkit-animation: anim_circle-aspnet 1s ease-in-out forwards;
+    animation: anim_circle-aspnet 1s ease-in-out forwards;
+}
+
+
+.progressbar__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0.25em 0.5em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+@-webkit-keyframes anim_circle-html {
+    to {
+        stroke-dashoffset: 220;
+    }
+}
+
+@keyframes anim_circle-html {
+    to {
+        stroke-dashoffset: 220;
+    }
+}
+
+@-webkit-keyframes anim_circle-css {
+    to {
+        stroke-dashoffset: 66;
+    }
+}
+
+@keyframes anim_circle-css {
+    to {
+        stroke-dashoffset: 66;
+    }
+}
+
+@-webkit-keyframes anim_circle-csharp {
+    to {
+        stroke-dashoffset: 132;
+    }
+}
+
+@keyframes anim_circle-csharp {
+    to {
+        stroke-dashoffset: 132;
+    }
+}
+
+@-webkit-keyframes anim_circle-js {
+    to {
+        stroke-dashoffset: 88;
+    }
+}
+
+@keyframes anim_circle-js {
+    to {
+        stroke-dashoffset: 88;
+    }
+}
+
+@-webkit-keyframes anim_circle-mvc {
+    to {
+        stroke-dashoffset: 88;
+    }
+}
+
+@keyframes anim_circle-mvc {
+    to {
+        stroke-dashoffset: 88;
+    }
+}
+
+@-webkit-keyframes anim_circle-aspnet {
+    to {
+        stroke-dashoffset: 88;
+    }
+}
+
+@keyframes anim_circle-aspnet {
+    to {
+        stroke-dashoffset: 88;
+    }
+}
+
+
 
 
